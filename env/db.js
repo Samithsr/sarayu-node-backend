@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const connectDB = () => {
   mongoose
     .connect(
-      "mongodb+srv://samithrgowda:7zsJuGajQ7ONZicL@srdbcluster.b8lex.mongodb.net/SRDB2?retryWrites=true&w=majority&appName=SRDBCLUSTER"
+      proccess.env.DATABASE_URL
     )
     .then(() => {
       console.log("Database connection successfull!");
