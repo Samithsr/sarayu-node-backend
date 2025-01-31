@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const connectDB = () => {
   mongoose
     .connect(
-      proccess.env.DATABASE_URL
+      process.env.DATABASE_URL
     )
     .then(() => {
       console.log("Database connection successfull!");
