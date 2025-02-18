@@ -123,7 +123,7 @@ const startTopicStream = (topic) => {
 };
 
 // Start server after DB connection
-const socketPort = process.env.SOCKET_PORT || 4000;
+const socketPort = process.env.PORT || 4000;
 server.listen(socketPort, "0.0.0.0", () => {
   logger.info(`Socket.IO Server running on port ${socketPort}`);
 
